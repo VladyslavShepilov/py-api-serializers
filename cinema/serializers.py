@@ -61,10 +61,12 @@ class MovieListSerializer(MovieSerializer):
         many=True,
         read_only=True,
         slug_field="name",
+        allow_empty=True
     )
     actors = serializers.StringRelatedField(
         read_only=True,
         many=True,
+        allow_empty=True,
     )
 
 
