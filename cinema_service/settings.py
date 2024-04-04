@@ -28,10 +28,11 @@ SECRET_KEY = (
 DEBUG = True
 
 DEBUG_TOOLBAR_CONFIG = {
-    'SHOW_TOOLBAR_CALLBACK': lambda request: True,
-    'INTERCEPT_REDIRECTS': False,
-    'SHOW_COLLAPSED': True,
-    'ENABLE_STACKTRACES': True,
+    "SHOW_TOOLBAR_CALLBACK":
+        lambda request: True,
+    "INTERCEPT_REDIRECTS": False,
+    "SHOW_COLLAPSED": True,
+    "ENABLE_STACKTRACES": True,
 }
 
 

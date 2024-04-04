@@ -91,7 +91,9 @@ class MovieSessionListSerializer(serializers.ModelSerializer):
         source="cinema_hall.name",
         read_only=True,
     )
-    cinema_hall_capacity = serializers.ReadOnlyField(source="cinema_hall.capacity")
+    cinema_hall_capacity = serializers.ReadOnlyField(
+        source="cinema_hall.capacity"
+    )
 
     class Meta:
         model = MovieSession
